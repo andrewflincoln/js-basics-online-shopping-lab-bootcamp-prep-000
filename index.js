@@ -74,8 +74,6 @@ function total() {
 function removeFromCart(item) {
 
   for (var c = 0; c < cart.length; c++) {
-  //  var cand = Object.keys(cart[c])
-    //if (cand === item) {
 
     if (cart[c].hasOwnProperty(item) === true) {
         cart.splice(c, 1)
@@ -83,7 +81,7 @@ function removeFromCart(item) {
         { break; }
     }
 
-    else if (c === cart.length - 1) {
+    else if (c === (cart.length - 1)) {
       console.log("That item is not in your cart.")
     }
     else {
