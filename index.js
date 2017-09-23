@@ -76,7 +76,7 @@ function removeFromCart(item) {
   for (var c = 0; c < cart.length; c++) {
     var cand = Object.keys(cart[c])
     if (cand === item) {
-        var z = cart.splice(c, 1)
+        cart = cart.splice(c, 1)
         return cart
         { break; }
     }
