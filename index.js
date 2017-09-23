@@ -27,7 +27,7 @@ function viewCart() {
   else {
     var cartList = "In your cart, you have "
 
-    for (var c = 0; c < cart.length; c++) {
+    for (var c = 0; c <= cart.length; c++) {
       var item = Object.keys(cart[c])
 
       if (c === 0) {
