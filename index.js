@@ -34,7 +34,7 @@ function viewCart() {
 
       if (c === 0) {
         cartList = cartList + `${item} at $${price}.`
-        //{ break; }
+        { break; }
       }
 
 
