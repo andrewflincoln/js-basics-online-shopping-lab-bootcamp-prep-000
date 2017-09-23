@@ -27,11 +27,13 @@ function viewCart() {
   else {
     var cartList = "In your cart, you have "
 
-    for (var c = 0; c <= cart.length; c++) {
+    for (var c = 0; c < cart.length; c++) {
       var item = Object.keys(cart[c])
-
+      var priceGrabber = cart[c]
+      var price = priceGrabber.item
+      
       if (c === 0) {
-        cartList = cartList + `${item} at $${cart[c].item}.`
+        cartList = cartList + `${item} at $${price}.`
         { break; }
       }
 
