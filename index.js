@@ -55,27 +55,22 @@ function viewCart() {
       else {
           cartList = cartList + ` ${item} at $${price},`
       }
-
-
-
-
-
-
-
     }//for loop
     console.log(cartList);
-
-
   } //else
-
-
-
 }// function
 
 
 
 function total() {
-  // write your code here
+  var totes = 0;
+  for (var c = 0; c < cart.length; c++) {
+    var item = Object.keys(cart[c])
+    var priceGrabber = cart[c]
+    var price = priceGrabber[item]
+    totes = totes + price 
+  }
+  return totes
 }
 
 function removeFromCart(item) {
