@@ -77,7 +77,7 @@ function removeFromCart(item) {
     var cand = Object.keys(cart[c])
     if (cand === item) {
         cart.splice(c, 1)
-        return cart 
+        return cart
         { break; }
     }
     else if (c === cart.length - 1) {
