@@ -32,12 +32,13 @@ function viewCart() {
 
       if (c === 0 && cart.length === 1) {
         cartList = cartList + `${item} at $${cart[c].item}.`
+        { break; }
       }
 
 
 
     }//for loop
-    console.log(cartList);
+    console.log(cartList)
 
 
   } //else
