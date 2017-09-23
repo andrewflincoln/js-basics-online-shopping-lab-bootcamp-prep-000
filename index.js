@@ -83,9 +83,14 @@ function removeFromCart(item) {
         { break; }
     }
 
-    else if (c === cart.length) {
+    else if (c === cart.length - 1) {
       console.log("That item is not in your cart.")
     }
+    else {
+      { continue; }
+    }
+
+    
   }
 
 }
