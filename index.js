@@ -25,7 +25,7 @@ function viewCart() {
   }
 
   else {
-    var cartList = "In your cart, you have "
+    var cartList = "In your cart, you have"
 
     for (var c = 0; c < cart.length; c++) {
       var item = Object.keys(cart[c])
@@ -33,9 +33,32 @@ function viewCart() {
       var price = priceGrabber[item]
 
       if (cart.length === 1) {
-        cartList = cartList + `${item} at $${price}.`
+        cartList = cartList + ` ${item} at $${price}.`
         { break; }
       }
+
+      else if (c === 0) {
+        if (cart.length == 2) {
+            cartList = cartList + ` ${item} at $${price}`
+        }
+
+        else {
+            cartList = cartList + ` ${item} at $${price},`
+        }
+      }//else if
+
+      else if (c === cart.length - 1) {
+          cartList = cartList + ` and ${item} at $${price}.`
+          { break; }
+      }
+      
+      else {
+          cartList = cartList + ` ${item} at $${price},`
+      }  
+
+          
+
+      
 
 
 
