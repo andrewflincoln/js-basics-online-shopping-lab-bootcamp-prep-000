@@ -90,7 +90,7 @@ function removeFromCart(item) {
       { continue; }
     }
 
-    
+
   }
 
 }
