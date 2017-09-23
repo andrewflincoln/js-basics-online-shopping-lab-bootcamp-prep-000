@@ -68,7 +68,7 @@ function total() {
     var item = Object.keys(cart[c])
     var priceGrabber = cart[c]
     var price = priceGrabber[item]
-    totes = totes + price 
+    totes = totes + price
   }
   return totes
 }
