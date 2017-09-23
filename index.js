@@ -32,7 +32,7 @@ function viewCart() {
       var priceGrabber = cart[c]
       var price = priceGrabber[item]
 
-      if (c === 0) {
+      if (cart.length === 1) {
         cartList = cartList + `${item} at $${price}.`
         { break; }
       }
