@@ -30,21 +30,21 @@ function viewCart() {
     for (var c = 0; c < cart.length; c++) {
       var item = Object.keys(cart[c])
 
-      if (c === 0) {
+      if (c === 0 && cart.length === 1) {
         cartList = cartList + `${item} at $${cart[c].item}.`
       }
 
 
 
-    }
+    }//for loop
     console.log(cartList);
 
 
-  }
+  } //else
 
 
 
-}
+}// function
 
 
 
