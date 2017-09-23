@@ -29,13 +29,13 @@ function viewCart() {
 
     for (var c = 0; c < cart.length; c++) {
       var item = Object.keys(cart[c])
-      
+
       if (cart.length === 1) {
         cartList = cartList + `${item} at $${cart[c].item}.`
       }
 
 
-      
+
     }
     console.log(cartList);
     }
