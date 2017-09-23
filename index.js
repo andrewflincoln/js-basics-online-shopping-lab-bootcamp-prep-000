@@ -79,7 +79,7 @@ function removeFromCart(item) {
         return cart
         { break; }
     }
-  
+
   }
   if (orig === cart.length) {
     console.log("That item is not in your cart.")
