@@ -31,7 +31,7 @@ function viewCart() {
       var item = Object.keys(cart[c])
       var priceGrabber = cart[c]
       var price = priceGrabber.item
-      
+
       if (c === 0) {
         cartList = cartList + `${item} at $${price}.`
         { break; }
