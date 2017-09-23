@@ -60,8 +60,6 @@ function viewCart() {
   } //else
 }// function
 
-
-
 function total() {
   var totes = 0;
   for (var c = 0; c < cart.length; c++) {
@@ -74,7 +72,19 @@ function total() {
 }
 
 function removeFromCart(item) {
-  // write your code here
+
+  for (var c = 0; c < cart.length; c++) {
+    var cand = Object.keys(cart[c])
+    if (cand === item) {
+        delete cart[c]
+        return cart
+        { break; }
+    }
+    else if (c === cart.length - 1) {
+      console.log("That item is not in your cart.")
+    }
+  }
+    
 }
 
 function placeOrder(cardNumber) {
