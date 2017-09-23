@@ -18,6 +18,7 @@ function addToCart(item) {
  return cart
 }
 
+
 function viewCart() {
   if (cart.length === 0) {
     console.log("Your shopping cart is empty.")
@@ -28,12 +29,13 @@ function viewCart() {
 
     for (var c = 0; c < cart.length; c++) {
       var item = Object.keys(cart[c])
-      //var price = Object.values(cart[c])
-
-      if (c === 0) {
-      cartList = cartList + `${item} at $${cart[c].item}.`
-
+      
+      if (cart.length === 1) {
+        cartList = cartList + `${item} at $${cart[c].item}.`
       }
+
+
+      
     }
     console.log(cartList);
     }
@@ -43,6 +45,8 @@ function viewCart() {
 
 
 }
+
+
 
 function total() {
   // write your code here
