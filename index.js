@@ -38,7 +38,7 @@ function viewCart() {
 
 
     }//for loop
-    console.log(cartList)
+    console.log(cartList);
 
 
   } //else
