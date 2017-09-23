@@ -51,14 +51,14 @@ function viewCart() {
           cartList = cartList + ` and ${item} at $${price}.`
           { break; }
       }
-      
+
       else {
           cartList = cartList + ` ${item} at $${price},`
-      }  
+      }
 
-          
 
-      
+
+
 
 
 
