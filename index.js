@@ -41,7 +41,7 @@ function viewCart() {
 
     }//for loop
     console.log(cartList);
-
+    return cartList;
 
   } //else
 
